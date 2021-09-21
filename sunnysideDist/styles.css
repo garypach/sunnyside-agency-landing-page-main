@@ -1,0 +1,225 @@
+  .sticky-top{
+    background-color: #3EBFFF;
+  }
+  
+  .header{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  .creative-text{
+    font-family: fraunces, sans-serif;
+    font-size: 2.5rem;
+    font-weight: 900;
+    letter-spacing: 5px;
+    line-height: 50px;
+    text-transform: uppercase;
+  }
+  .creative-text-arrow{
+    
+    color:white;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    margin:0 auto;
+    margin-top: 92px;
+  }
+  .down-arrow{
+    margin-top: 48px;
+  }
+  /*
+  .down-arrow{
+    -webkit-animation: action 1s infinite  alternate;
+    animation: action 1s infinite  alternate;
+  }
+  @-webkit-keyframes action {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+  }
+  @keyframes action {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+  }
+  */
+  .brand-section{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  .brand-cont{
+    flex:50%;
+    background-color: white;  
+    width: 100%;
+  }
+  .brand-text-cont{
+    margin:auto auto;
+    text-align: center;
+  }
+  .brand-text-cont h1{
+    font-size: 2rem;
+    font-family: fraunces, sans-serif;
+    font-weight:700;
+  }
+  .egg-img{
+    flex:50%;
+  }
+  .logo{
+    transform: rotate(90deg);
+    font-weight: 900;
+    font-size: 70px;
+}
+.muskImage{
+    filter: brightness(70%);
+}
+
+.container {
+    max-width: 960px;
+  }
+ .checker {
+    background-color: black;
+    color:white;
+ }
+ .checker-btn {
+  background-color: white;
+  color:black;
+}
+  
+  /*
+   * Custom translucent site header
+   */
+  
+  .site-header {
+    background-color: rgba(0, 0, 0, .85);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+  }
+  .site-header a {
+    color: #8e8e8e;
+    transition: color .15s ease-in-out;
+  }
+  .site-header a:hover {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  
+  .flex-equal > * {
+    flex: 1;
+  }
+  @media (min-width: 768px) {
+    .flex-md-equal > * {
+      flex: 1;
+    }
+  }
+
+@-webkit-keyframes fadeIn { 
+    0% { opacity:0; opacity: 1\9; /* IE9 only */ } 
+    33% { opacity:1; }
+    66% { opacity: 0 }
+  }
+  
+  /* Firefox */
+  @-moz-keyframes fadeIn { 
+    0% { opacity:0; opacity: 1\9; /* IE9 only */ } 
+    33% { opacity:1; }
+    66% { opacity: 0 }
+  }
+  
+  .text-animated-one, .text-animated-two, .text-animated-three {
+      position: relative;
+      padding: 30px;
+  }
+  
+  .text-animated-one
+  {
+      opacity:0; 
+      -webkit-animation:fadeIn ease-in 9s infinite;
+      -moz-animation:fadeIn ease-in 9s infinite;
+      animation:fadeIn ease-in 9s infinite;
+  
+      -webkit-animation-fill-mode:forwards; 
+      -moz-animation-fill-mode:forwards;
+      animation-fill-mode:forwards;
+  }
+  
+  .text-animated-two
+  {
+      opacity:0; 
+      -webkit-animation:fadeIn ease-in 9s infinite;
+      -moz-animation:fadeIn ease-in 9s infinite;
+      animation:fadeIn ease-in 9s infinite;
+  
+      -webkit-animation-fill-mode:forwards; 
+      -moz-animation-fill-mode:forwards;
+      animation-fill-mode:forwards;
+  
+     -webkit-animation-delay: 3s;
+     -moz-animation-delay: 3s;
+     animation-delay: 3s;
+  }
+  
+  .text-animated-three
+  {
+     
+      opacity:0; 
+      -webkit-animation:fadeIn ease-in 9s infinite;
+      -moz-animation:fadeIn ease-in 9s infinite;
+      animation:fadeIn ease-in 9s infinite;
+  
+      -webkit-animation-fill-mode:forwards; 
+      -moz-animation-fill-mode:forwards;
+      animation-fill-mode:forwards;
+  
+     -webkit-animation-delay: 6s;
+     -moz-animation-delay: 6s;
+     animation-delay: 6s;
+  }
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) { 
+ 
+    .muskImage{
+        display: block;
+        width: 600px;
+        position: relative;
+        left: 150px;
+    }
+    .teslaImage{
+        display: block;
+        width: 1000px;
+        position: relative;
+        right:100px;
+        
+    }
+    .spacexImage{
+        display: block;
+        width: 900px;
+        position: relative;
+        bottom:50px
+        
+        
+    }
+    .boringImage{
+        display: block;
+        filter: contrast(170%) grayscale(100%);
+        width: 900px;
+        position: relative;
+        bottom: 70px;
+        right:100px;
+    }
+    .imgCont{
+        display: block;
+    }
+    .textBox{
+      padding-left:100px;
+    }
+    .checker {
+      background-color: white;
+      color:black;
+   }
+   .checker-btn {
+    background-color: black;
+    color:white;
+  }
+    
+}
