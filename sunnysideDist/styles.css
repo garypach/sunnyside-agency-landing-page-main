@@ -63,163 +63,178 @@
   .egg-img{
     flex:50%;
   }
-  .logo{
-    transform: rotate(90deg);
-    font-weight: 900;
-    font-size: 70px;
-}
-.muskImage{
-    filter: brightness(70%);
+
+  .thumbnail{
+    position: relative;
+    margin-bottom: -7px;
+  }
+
+  .thumbnail img{
+    display: block;
+  }
+
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, 0% );
+  }
+  
+  .centered .photog{
+    color: hsl(198, 62%, 26%);
+  }
+  .centered .graph{
+    color: hsl(167, 40%, 24%);
+  }
+  .graph-hed {
+    font-size: 9vw;
+    font-family: fraunces, sans-serif;
+    font-weight:700;
+
+  }
+  .centered .graph-txt{
+    font-size: 4vw;
+    line-height: 6vw;
+    font-family: Barlow, sans-serif
+
+  }
+  
+  .photo-hed {
+    font-size: 9vw;
+    font-family: fraunces, sans-serif;
+    font-weight:700;
+
+  }
+  .centered .photo-txt{
+    font-size: 4vw;
+    line-height: 6vw;
+    font-family: Barlow, sans-serif
+
+  }
+  .testimonials-txt{
+    font-size: 14px;
+    color: hsl(210, 4%, 67%);
+    font-family: fraunces, sans-serif;
+    font-weight: 700;
+    letter-spacing: 4px;
+
+  }
+.bio-txt{
+  margin-top: 20px;
+
+  font-size: 14px;
+  color: hsl(212, 27%, 19%);
+  font-family: Barlow, sans-serif;
+  padding:0 10px;
+  }
+  .name-txt{
+    margin-top: 30px;
+    font-size: 18px;
+    color: hsl(212, 27%, 19%);
+    font-family: fraunces, sans-serif;
+  }
+  .job-txt{
+    font-size: 14px;
+    color: hsl(210, 4%, 67%);
+    font-family: Barlow, sans-serif;
+    color: hsl(210, 4%, 67%);
+
+  }
+.test-imgs{
+  margin-top: 40px;
+
+  width: 20%;
 }
 
-.container {
-    max-width: 960px;
-  }
- .checker {
-    background-color: black;
-    color:white;
+
+
+ .sunnyfooter{
+   background-color: rgb(142, 212, 190);
+   
  }
- .checker-btn {
-  background-color: white;
-  color:black;
-}
-  
-  /*
-   * Custom translucent site header
-   */
-  
-  .site-header {
-    background-color: rgba(0, 0, 0, .85);
-    -webkit-backdrop-filter: saturate(180%) blur(20px);
-    backdrop-filter: saturate(180%) blur(20px);
+ .sunnyfooter a{
+  font-family: Barlow, sans-serif;
+  color: hsl(168, 34%, 41%);
+ }
+
+  .row{
+    margin: 0 0;
   }
-  .site-header a {
-    color: #8e8e8e;
-    transition: color .15s ease-in-out;
-  }
-  .site-header a:hover {
-    color: #fff;
-    text-decoration: none;
-  }
-  
   
   .flex-equal > * {
     flex: 1;
   }
+
+
+
   @media (min-width: 768px) {
     .flex-md-equal > * {
       flex: 1;
     }
   }
-
-@-webkit-keyframes fadeIn { 
-    0% { opacity:0; opacity: 1\9; /* IE9 only */ } 
-    33% { opacity:1; }
-    66% { opacity: 0 }
+  .hide-graphic{
+    display: none !important; 
   }
-  
-  /* Firefox */
-  @-moz-keyframes fadeIn { 
-    0% { opacity:0; opacity: 1\9; /* IE9 only */ } 
-    33% { opacity:1; }
-    66% { opacity: 0 }
+  .hide-photo{
+    display: none !important;
   }
-  
-  .text-animated-one, .text-animated-two, .text-animated-three {
-      position: relative;
-      padding: 30px;
+  .show-graphic{
+    display: none;
   }
-  
-  .text-animated-one
-  {
-      opacity:0; 
-      -webkit-animation:fadeIn ease-in 9s infinite;
-      -moz-animation:fadeIn ease-in 9s infinite;
-      animation:fadeIn ease-in 9s infinite;
-  
-      -webkit-animation-fill-mode:forwards; 
-      -moz-animation-fill-mode:forwards;
-      animation-fill-mode:forwards;
+  .show-photo{
+    display: none;
   }
-  
-  .text-animated-two
-  {
-      opacity:0; 
-      -webkit-animation:fadeIn ease-in 9s infinite;
-      -moz-animation:fadeIn ease-in 9s infinite;
-      animation:fadeIn ease-in 9s infinite;
-  
-      -webkit-animation-fill-mode:forwards; 
-      -moz-animation-fill-mode:forwards;
-      animation-fill-mode:forwards;
-  
-     -webkit-animation-delay: 3s;
-     -moz-animation-delay: 3s;
-     animation-delay: 3s;
-  }
-  
-  .text-animated-three
-  {
-     
-      opacity:0; 
-      -webkit-animation:fadeIn ease-in 9s infinite;
-      -moz-animation:fadeIn ease-in 9s infinite;
-      animation:fadeIn ease-in 9s infinite;
-  
-      -webkit-animation-fill-mode:forwards; 
-      -moz-animation-fill-mode:forwards;
-      animation-fill-mode:forwards;
-  
-     -webkit-animation-delay: 6s;
-     -moz-animation-delay: 6s;
-     animation-delay: 6s;
-  }
-
 /*Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) { 
- 
-    .muskImage{
-        display: block;
-        width: 600px;
-        position: relative;
-        left: 150px;
-    }
-    .teslaImage{
-        display: block;
-        width: 1000px;
-        position: relative;
-        right:100px;
-        
-    }
-    .spacexImage{
-        display: block;
-        width: 900px;
-        position: relative;
-        bottom:50px
-        
-        
-    }
-    .boringImage{
-        display: block;
-        filter: contrast(170%) grayscale(100%);
-        width: 900px;
-        position: relative;
-        bottom: 70px;
-        right:100px;
-    }
-    .imgCont{
-        display: block;
-    }
-    .textBox{
-      padding-left:100px;
-    }
-    .checker {
-      background-color: white;
-      color:black;
-   }
-   .checker-btn {
-    background-color: black;
-    color:white;
+  .test-cont{
+    padding: 100px;
   }
-    
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, 0% );
+  }
+  .graph-hed {
+    margin-top: 30px !important;
+
+    font-size: 2vw;
+    font-family: fraunces, sans-serif;
+    font-weight:700;
+  }
+  .centered .mt-5{
+    margin-top: 0 !important;
+  }
+  .centered .graph-txt{
+    font-size: 1.2vw;
+    line-height: 2vw;
+    font-family: Barlow, sans-serif
+
+  }
+  
+  .photo-hed {
+    font-size: 2vw;
+    font-family: fraunces, sans-serif;
+    font-weight:700;
+
+  }
+  .centered .photo-txt{
+    font-size: 1.2vw;
+    line-height: 2vw;
+    font-family: Barlow, sans-serif
+
+  }
+  .hide-graphic{
+    display: inline-block !important;
+  }
+  .hide-photo{
+    display: inline-block !important;
+  }
+  .show-graphic{
+    display: none !important;
+  }
+  .show-photo{
+    display: none !important;
+  }
+
 }
